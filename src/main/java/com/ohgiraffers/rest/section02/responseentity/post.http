@@ -1,0 +1,32 @@
+### Send POST request with json body
+POST localhost:8080/entity/users
+Content-Type: application/json
+
+{
+  "id": "user04",
+  "pw": "pass04",
+  "name": "신사임당",
+  "enrollDate": "2023-09-05T02:08:58.294+00:00"
+}
+
+### GET find user
+GET localhost:8080/entity/users/4
+
+### PUT modify user
+PUT localhost:8080/entity/users/1
+Content-Type: application/json
+
+{
+  "id": "user05",
+  "pw": "pass05",
+  "name": "임꺽정"
+}
+
+### GET find user
+GET localhost:8080/entity/users/1
+
+### DELETE remove user
+DELETE localhost:8080/entity/users/1
+
+### GET find user
+GET localhost:8080/entity/users/1
